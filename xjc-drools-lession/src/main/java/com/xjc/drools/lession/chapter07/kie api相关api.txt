@@ -1,0 +1,17 @@
+1、阅读源码，可以通过打印或者深入阅读的方式
+2、KieServices
+   获取KieContainer，通过kieContainer访问kbase和ksession
+   获取KieReposity,通过KieReposity来管理KieModule
+  KieServices是一个中心，通过它来获取相关对象的管理合执行
+3、KieContainer
+  通过KieContainer 可以获取KieBase 和KieSession
+4、KieBase
+   KieBase本身不包含运行数据，如果需要，要通过KieBase创建KieSession
+5、KieSession
+ 通过它与规则引擎打交道
+6、KieRepository
+   KieRepository是KieModule的容器
+7、KieProject
+  KieProject 可以构建KieContainer和KieRepository
+8、ClasspathKieProject
+  ClasspathKieProject实现了KieProject，使其具有maven简单构建项目的能力

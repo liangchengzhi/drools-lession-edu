@@ -1,0 +1,13 @@
+1、kie 是drools6开始引入的，knowlege is everything
+2、kie包含OptaPlanner、Drools、UberFire、jBPM
+   Guvnor 是kie workbench的前身。
+   kie定义了一套公共的接口，被下面的部分实现。
+3、kie的声明周期：
+1)、编写规则文件
+2)、构建，drl构建成jar
+3)、部署之前测试
+4)、部署
+5)、使用，通过KieContainer解析成KieSession
+6)、执行
+7)、交互，通过命令或UI与引擎交互
+8)、管理，管理KieSession或者KieContainer对象

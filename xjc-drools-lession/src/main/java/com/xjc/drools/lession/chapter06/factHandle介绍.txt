@@ -1,0 +1,8 @@
+1、什么是FACT对象
+  简单来说就是特殊的JAVA BEAN 对象
+  一般用于gettter/setter方法
+  放置与WorkingMemory当中
+ 是应用系统与规则的传输桥梁 
+2、FACT对象的特殊之处
+引用的传递
+factHandler
