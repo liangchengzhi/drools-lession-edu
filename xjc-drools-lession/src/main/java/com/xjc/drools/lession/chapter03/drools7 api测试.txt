@@ -1,0 +1,5 @@
+1、drools 7使用kmodule.xml简化了基本对象，只包含三个基本的对象
+2、drools 7 加入了组的概念，可以通过组找到对象规则
+3、drools 7 三个基本类
+KieService、KieContainer、KieSession
+4、agendaGroup，可以将规则分组，找到某一组的规则

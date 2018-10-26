@@ -1,0 +1,14 @@
+1、drools 5和 drools 7有很大区别，虽然可以向下兼容，但是很多api将慢慢废弃，所以建议使用最新版本的drools
+2、遇到knowlege开头的api一般都是drools5的api
+3、demo 情景
+ # 某类商品现在打折处理，根据市场行情不断进行折扣变更？
+ Q1：通过硬编码怎么处理？
+   数据库或者硬编码判断
+ Q2: 通过规则引擎怎么处理？
+ 
+几个基础的api对象：
+KnowledgeBuilder: 收集、编译规则，生成Collection<KnowledgePackage>给其他api调用
+KnowledgePackage: 存放编译好的规则
+KnowledgeBase: 创建StatefulKnowledgeSession和StatelessKnowledgeSession对象
+StatefulKnowledgeSession: 触发规则，需要手动dispose()释放内存资源
+StatelessKnowledgeSession: 触发规则，不需要dispose，只能插入一次fact对象
