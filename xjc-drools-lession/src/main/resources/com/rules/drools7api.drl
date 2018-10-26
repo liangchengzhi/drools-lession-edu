@@ -1,0 +1,20 @@
+package com.rules;
+import com.xjc.drools.lession.model.Car;
+
+rule "older than 60"
+agenda-group "drools7-api"
+when 
+	$car:Car(person.age > 60);
+then
+	$car.setDiscount(80);
+	System.out.println("age > 60 :" + $car.getPerson().getAge());
+end
+
+rule "drools7-api-test yanger than 60"
+agenda-group "drools7-api"
+when 
+	$car:Car(person.age <= 60);
+then
+	$car.setDiscount(90);
+	System.out.println("age <= 60 :" + $car.getPerson().getAge());
+end
